@@ -126,32 +126,32 @@ C\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\C.dir\build
 .PHONY : C\fast
 
-main.obj: main.cpp.obj
+Configure_file.obj: Configure_file.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Configure_file.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\C.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+Configure_file.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\C.dir\Configure_file.cpp.obj
+.PHONY : Configure_file.cpp.obj
 
-main.i: main.cpp.i
+Configure_file.i: Configure_file.cpp.i
 
-.PHONY : main.i
+.PHONY : Configure_file.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\C.dir\main.cpp.i
-.PHONY : main.cpp.i
+Configure_file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\C.dir\Configure_file.cpp.i
+.PHONY : Configure_file.cpp.i
 
-main.s: main.cpp.s
+Configure_file.s: Configure_file.cpp.s
 
-.PHONY : main.s
+.PHONY : Configure_file.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\C.dir\main.cpp.s
-.PHONY : main.cpp.s
+Configure_file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\C.dir\Configure_file.cpp.s
+.PHONY : Configure_file.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Configure_file.obj
+	@echo ... Configure_file.i
+	@echo ... Configure_file.s
 .PHONY : help
 
 

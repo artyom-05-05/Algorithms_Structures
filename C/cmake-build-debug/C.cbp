@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/user/CLionProjects/Algorithms&amp;Structures/C/main.cpp">
+		<Unit filename="C:/Users/user/CLionProjects/Algorithms&amp;Structures/C/Configure_file.cpp">
 			<Option target="C"/>
 		</Unit>
 		<Unit filename="C:/Users/user/CLionProjects/Algorithms&amp;Structures/C/CMakeLists.txt">

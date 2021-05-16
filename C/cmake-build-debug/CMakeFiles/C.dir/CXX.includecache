@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/user/CLionProjects/Algorithms&Structures/C/main.cpp
+C:/Users/user/CLionProjects/Algorithms&Structures/C/work_last.cpp
 iostream
 -
 unordered_map
@@ -14,7 +14,5 @@ unordered_map
 vector
 -
 string
--
-fstream
 -
 
