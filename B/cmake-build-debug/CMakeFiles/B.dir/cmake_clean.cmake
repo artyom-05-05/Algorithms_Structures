@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "B.exe.manifest"
   "B.lib"
   "B.pdb"
-  "CMakeFiles/B.dir/main.cpp.obj"
+  "CMakeFiles/B.dir/Zoo.cpp.obj"
 )
 
 # Per-language clean rules from dependency scanning.

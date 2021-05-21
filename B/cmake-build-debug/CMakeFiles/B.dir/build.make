@@ -60,33 +60,33 @@ include CMakeFiles\B.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\B.dir\flags.make
 
-CMakeFiles\B.dir\main.cpp.obj: CMakeFiles\B.dir\flags.make
-CMakeFiles\B.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\CLionProjects\Algorithms&Structures\B\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/B.dir/main.cpp.obj"
+CMakeFiles\B.dir\Zoo.cpp.obj: CMakeFiles\B.dir\flags.make
+CMakeFiles\B.dir\Zoo.cpp.obj: ..\Zoo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\CLionProjects\Algorithms&Structures\B\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/B.dir/Zoo.cpp.obj"
 	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\B.dir\main.cpp.obj /FdCMakeFiles\B.dir\ /FS -c "C:\Users\user\CLionProjects\Algorithms&Structures\B\main.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\B.dir\Zoo.cpp.obj /FdCMakeFiles\B.dir\ /FS -c "C:\Users\user\CLionProjects\Algorithms&Structures\B\Zoo.cpp"
 <<
 
-CMakeFiles\B.dir\main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/B.dir/main.cpp.i"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe > CMakeFiles\B.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\user\CLionProjects\Algorithms&Structures\B\main.cpp"
+CMakeFiles\B.dir\Zoo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/B.dir/Zoo.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe > CMakeFiles\B.dir\Zoo.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\user\CLionProjects\Algorithms&Structures\B\Zoo.cpp"
 <<
 
-CMakeFiles\B.dir\main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/B.dir/main.cpp.s"
+CMakeFiles\B.dir\Zoo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/B.dir/Zoo.cpp.s"
 	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\B.dir\main.cpp.s /c "C:\Users\user\CLionProjects\Algorithms&Structures\B\main.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\B.dir\Zoo.cpp.s /c "C:\Users\user\CLionProjects\Algorithms&Structures\B\Zoo.cpp"
 <<
 
 # Object files for target B
 B_OBJECTS = \
-"CMakeFiles\B.dir\main.cpp.obj"
+"CMakeFiles\B.dir\Zoo.cpp.obj"
 
 # External object files for target B
 B_EXTERNAL_OBJECTS =
 
-B.exe: CMakeFiles\B.dir\main.cpp.obj
+B.exe: CMakeFiles\B.dir\Zoo.cpp.obj
 B.exe: CMakeFiles\B.dir\build.make
 B.exe: CMakeFiles\B.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\user\CLionProjects\Algorithms&Structures\B\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable B.exe"

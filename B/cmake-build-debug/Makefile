@@ -126,32 +126,32 @@ B\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\B.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\B.dir\build
 .PHONY : B\fast
 
-main.obj: main.cpp.obj
+Zoo.obj: Zoo.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Zoo.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\B.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\B.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+Zoo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\B.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\B.dir\Zoo.cpp.obj
+.PHONY : Zoo.cpp.obj
 
-main.i: main.cpp.i
+Zoo.i: Zoo.cpp.i
 
-.PHONY : main.i
+.PHONY : Zoo.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\B.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\B.dir\main.cpp.i
-.PHONY : main.cpp.i
+Zoo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\B.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\B.dir\Zoo.cpp.i
+.PHONY : Zoo.cpp.i
 
-main.s: main.cpp.s
+Zoo.s: Zoo.cpp.s
 
-.PHONY : main.s
+.PHONY : Zoo.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\B.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\B.dir\main.cpp.s
-.PHONY : main.cpp.s
+Zoo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\B.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\B.dir\Zoo.cpp.s
+.PHONY : Zoo.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... B
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Zoo.obj
+	@echo ... Zoo.i
+	@echo ... Zoo.s
 .PHONY : help
 
 
