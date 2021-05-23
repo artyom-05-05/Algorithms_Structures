@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/user/CLionProjects/Algorithms&Structures/G/main.cpp" "C:/Users/user/CLionProjects/Algorithms&Structures/G/cmake-build-debug/CMakeFiles/G.dir/main.cpp.obj"
+  "C:/Users/user/CLionProjects/Algorithms&Structures/G/aurora.cpp" "C:/Users/user/CLionProjects/Algorithms&Structures/G/cmake-build-debug/CMakeFiles/G.dir/aurora.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

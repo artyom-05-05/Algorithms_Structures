@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
-project(G)
+project(H)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(G aurora.cpp)
+add_executable(H shop.cpp)

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/G.dir/main.cpp.obj"
+  "CMakeFiles/G.dir/aurora.cpp.obj"
   "G.exe"
   "G.exe.manifest"
   "G.lib"

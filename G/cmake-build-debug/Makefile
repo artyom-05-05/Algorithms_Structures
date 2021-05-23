@@ -126,32 +126,32 @@ G\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\G.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\G.dir\build
 .PHONY : G\fast
 
-main.obj: main.cpp.obj
+aurora.obj: aurora.cpp.obj
 
-.PHONY : main.obj
+.PHONY : aurora.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\G.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\G.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+aurora.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\G.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\G.dir\aurora.cpp.obj
+.PHONY : aurora.cpp.obj
 
-main.i: main.cpp.i
+aurora.i: aurora.cpp.i
 
-.PHONY : main.i
+.PHONY : aurora.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\G.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\G.dir\main.cpp.i
-.PHONY : main.cpp.i
+aurora.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\G.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\G.dir\aurora.cpp.i
+.PHONY : aurora.cpp.i
 
-main.s: main.cpp.s
+aurora.s: aurora.cpp.s
 
-.PHONY : main.s
+.PHONY : aurora.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\G.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\G.dir\main.cpp.s
-.PHONY : main.cpp.s
+aurora.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\G.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\G.dir\aurora.cpp.s
+.PHONY : aurora.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... G
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... aurora.obj
+	@echo ... aurora.i
+	@echo ... aurora.s
 .PHONY : help
 
 
