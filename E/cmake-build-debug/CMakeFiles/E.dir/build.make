@@ -60,33 +60,33 @@ include CMakeFiles\E.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\E.dir\flags.make
 
-CMakeFiles\E.dir\main.cpp.obj: CMakeFiles\E.dir\flags.make
-CMakeFiles\E.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\CLionProjects\Algorithms&Structures\E\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/E.dir/main.cpp.obj"
+CMakeFiles\E.dir\Cows_in_stalls.cpp.obj: CMakeFiles\E.dir\flags.make
+CMakeFiles\E.dir\Cows_in_stalls.cpp.obj: ..\Cows_in_stalls.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\user\CLionProjects\Algorithms&Structures\E\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/E.dir/Cows_in_stalls.cpp.obj"
 	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\E.dir\main.cpp.obj /FdCMakeFiles\E.dir\ /FS -c "C:\Users\user\CLionProjects\Algorithms&Structures\E\main.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\E.dir\Cows_in_stalls.cpp.obj /FdCMakeFiles\E.dir\ /FS -c "C:\Users\user\CLionProjects\Algorithms&Structures\E\Cows_in_stalls.cpp"
 <<
 
-CMakeFiles\E.dir\main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/E.dir/main.cpp.i"
-	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe > CMakeFiles\E.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\user\CLionProjects\Algorithms&Structures\E\main.cpp"
+CMakeFiles\E.dir\Cows_in_stalls.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/E.dir/Cows_in_stalls.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe > CMakeFiles\E.dir\Cows_in_stalls.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\user\CLionProjects\Algorithms&Structures\E\Cows_in_stalls.cpp"
 <<
 
-CMakeFiles\E.dir\main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/E.dir/main.cpp.s"
+CMakeFiles\E.dir\Cows_in_stalls.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/E.dir/Cows_in_stalls.cpp.s"
 	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\E.dir\main.cpp.s /c "C:\Users\user\CLionProjects\Algorithms&Structures\E\main.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\E.dir\Cows_in_stalls.cpp.s /c "C:\Users\user\CLionProjects\Algorithms&Structures\E\Cows_in_stalls.cpp"
 <<
 
 # Object files for target E
 E_OBJECTS = \
-"CMakeFiles\E.dir\main.cpp.obj"
+"CMakeFiles\E.dir\Cows_in_stalls.cpp.obj"
 
 # External object files for target E
 E_EXTERNAL_OBJECTS =
 
-E.exe: CMakeFiles\E.dir\main.cpp.obj
+E.exe: CMakeFiles\E.dir\Cows_in_stalls.cpp.obj
 E.exe: CMakeFiles\E.dir\build.make
 E.exe: CMakeFiles\E.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\user\CLionProjects\Algorithms&Structures\E\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable E.exe"

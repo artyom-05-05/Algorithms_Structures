@@ -126,32 +126,32 @@ E\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\E.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\E.dir\build
 .PHONY : E\fast
 
-main.obj: main.cpp.obj
+Cows_in_stalls.obj: Cows_in_stalls.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Cows_in_stalls.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\E.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\E.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+Cows_in_stalls.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\E.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\E.dir\Cows_in_stalls.cpp.obj
+.PHONY : Cows_in_stalls.cpp.obj
 
-main.i: main.cpp.i
+Cows_in_stalls.i: Cows_in_stalls.cpp.i
 
-.PHONY : main.i
+.PHONY : Cows_in_stalls.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\E.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\E.dir\main.cpp.i
-.PHONY : main.cpp.i
+Cows_in_stalls.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\E.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\E.dir\Cows_in_stalls.cpp.i
+.PHONY : Cows_in_stalls.cpp.i
 
-main.s: main.cpp.s
+Cows_in_stalls.s: Cows_in_stalls.cpp.s
 
-.PHONY : main.s
+.PHONY : Cows_in_stalls.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\E.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\E.dir\main.cpp.s
-.PHONY : main.cpp.s
+Cows_in_stalls.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\E.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\E.dir\Cows_in_stalls.cpp.s
+.PHONY : Cows_in_stalls.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... E
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Cows_in_stalls.obj
+	@echo ... Cows_in_stalls.i
+	@echo ... Cows_in_stalls.s
 .PHONY : help
 
 

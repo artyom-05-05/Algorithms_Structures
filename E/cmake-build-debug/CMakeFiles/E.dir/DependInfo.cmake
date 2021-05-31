@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/user/CLionProjects/Algorithms&Structures/E/main.cpp" "C:/Users/user/CLionProjects/Algorithms&Structures/E/cmake-build-debug/CMakeFiles/E.dir/main.cpp.obj"
+  "C:/Users/user/CLionProjects/Algorithms&Structures/E/Cows_in_stalls.cpp" "C:/Users/user/CLionProjects/Algorithms&Structures/E/cmake-build-debug/CMakeFiles/E.dir/Cows_in_stalls.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

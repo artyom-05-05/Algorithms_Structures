@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/E.dir/main.cpp.obj"
+  "CMakeFiles/E.dir/Cows_in_stalls.cpp.obj"
   "E.exe"
   "E.exe.manifest"
   "E.lib"
