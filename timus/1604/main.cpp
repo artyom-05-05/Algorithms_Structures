@@ -1,58 +1,48 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 using namespace std;
 
 struct Sign {
     int index;
     int quantity;
 };
-
-pair<int, int> choose_pair(vector<Sign> signs, int k) {
-    pair<int, int> cur_pair = make_pair(0, 0);
-    int min = INT_MAX, max = INT_MIN;
-
-    for (int i = 0; i < k; i++) {
-        if (signs[i].quantity > 0) {
-            if (signs[i].quantity >= max) {
-                max = signs[i].quantity;
-                cur_pair.first = i;
-            }
-            if (signs[i].quantity < min) {
-                min = signs[i].quantity;
-                cur_pair.second = i;
-            }
-        }
+struct comparator {
+    bool operator()(Sign& a, Sign& b) {
+        return (a.quantity < b.quantity);
     }
-    return cur_pair;
-}
+};
 
 int main() {
-    int k, total_quantity = 0;
+/// Ввод
+    int k, cur_quantity;                             /// k - кол-во различных видов знаков
     cin >> k;
 
-    vector<Sign> signs(k);
+    priority_queue<Sign, vector<Sign>, comparator> signs;
     for (int i = 0; i < k; i++) {
-        cin >> signs[i].quantity;
-        signs[i].index = i + 1;
-        total_quantity += signs[i].quantity;
+        cin >> cur_quantity;                         /// cur_quantity - временная переменная для ввода
+        signs.push({.index = i + 1, .quantity = cur_quantity});
     }
 
-    pair<int, int> cur_pair;
+/// Обработка
+    Sign max_sign, max2_sign;
+    while (!empty(signs)) {
 
-    while (total_quantity > 0) {
-        cur_pair = choose_pair(signs, k);
+        max_sign = signs.top();
+        signs.pop();
+        max_sign.quantity--;
+        cout << max_sign.index << " ";
 
-        if (signs[cur_pair.first].quantity > 0) {
-            cout << signs[cur_pair.first].index << " ";
-            signs[cur_pair.first].quantity--;
-            total_quantity--;
+        bool flag = false;
+        if (!empty(signs)) {
+            flag = true;
+            max2_sign = signs.top();
+            signs.pop();
+            max2_sign.quantity--;
+            cout << max2_sign.index << " ";
         }
-
-        if (signs[cur_pair.second].quantity > 0) {
-            cout << signs[cur_pair.second].index << " ";
-            signs[cur_pair.second].quantity--;
-            total_quantity--;
-        }
+        if (max_sign.quantity > 0) signs.push(max_sign);
+        if (max2_sign.quantity > 0 && flag) signs.push(max2_sign);
     }
     return 0;
 }
