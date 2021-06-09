@@ -1,8 +1,8 @@
 #include <iostream>
-#include <deque>
+#include <list>
 using namespace std;
 
-deque <int> part1, part2;
+list <int> part1, part2;
 
 int main() {
     int N, num;              /// N - кол-во запросов, num - номер гоблина
