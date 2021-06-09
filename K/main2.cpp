@@ -29,11 +29,11 @@ int allocate_block(int K) {                                       /// Функц
             free_blocks.erase(*iter);
         }
         else {                                  /// Остается место (создаем новый свободный блок + обновляем найденный)
-            auto extra_block = new Block{(*iter)->start + K, (*iter)->length - K, true, (*iter), (*iter)->next};
+            Block* extra_block = new Block{(*iter)->start + K, (*iter)->length - K, true, (*iter), (*iter)->next};
             if ((*iter)->next) (*iter)->next->prev = extra_block;
 
-            auto old_block = *iter;
-            *(old_block) = {(*iter)->start, K, false, (*iter)->prev, extra_block};
+            Block* old_block = *iter;
+            *old_block = {(*iter)->start, K, false, (*iter)->prev, extra_block};
 
             free_blocks.erase(*iter);
             free_blocks.insert(extra_block);
@@ -50,38 +50,40 @@ void merge_nodes(struct Block *a, struct Block *b) {         /// Вспомог�
     a->next = b->next;
     if (b->next) b->next->prev = a;
     a->length += b->length;
-    delete (b);
+    delete(b);
 }
 
 void free_block(int T) {
     requests.push_back(nullptr);
     if (requests[T]) {
-        requests[T]->is_free = true;                             /// Освобождение блока по номеру запроса
+        Block* block = requests[T];
+        requests[T] = nullptr;
+        block->is_free = true;                                   /// Освобождение блока по номеру запроса
 
-        if (requests[T]->prev && requests[T]->prev->is_free) {   /// Проверка предыдущего блока (слияние)
-            free_blocks.erase(requests[T]->prev);
-            requests[T] = requests[T]->prev;
-            merge_nodes(requests[T], requests[T]->next);
+        if (block->prev && block->prev->is_free) {   /// Проверка предыдущего блока (слияние)
+            free_blocks.erase(block->prev);
+            block = block->prev;
+            merge_nodes(block, block->next);
         }
-        if (requests[T]->next && requests[T]->next->is_free) {   /// Проверка следующего блока (слияние)
-            free_blocks.erase(requests[T]->next);
-            merge_nodes(requests[T], requests[T]->next);
+        if (block->next && block->next->is_free) {   /// Проверка следующего блока (слияние)
+            free_blocks.erase(block->next);
+            merge_nodes(block, block->next);
         }
-        free_blocks.insert(requests[T]);
+        free_blocks.insert(block);
     }
 }
 
 int main() {
     int N, M, cur_request;              /// N - кол-во ячеек памяти, M - кол-во запросов, cur_request - текущий запрос
     cin >> N >> M;
-    free_blocks.insert(new Block{1, N, true, nullptr, nullptr});/// Большой пустой блок
+    free_blocks.insert(new Block{1, N, true, nullptr, nullptr}); /// Большой пустой блок
     requests.reserve(M);
 
     for (int i = 0; i < M; i++) {                                /// Обработка поступающих запросов
         cin >> cur_request;
         if (cur_request > 0)                                     /// 2 действия:
             cout << allocate_block(cur_request) << endl;         /// выделить блок
-        else free_block(-cur_request - 1);                       /// освободить блок
+        else free_block(-1 * cur_request - 1);                   /// освободить блок
     }
     return 0;
 }
