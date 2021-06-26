@@ -33,9 +33,8 @@ int allocate_block(int K) {                                       /// Функц
             if ((*iter)->next) (*iter)->next->prev = extra_block;
 
             Block* old_block = *iter;
-            *old_block = {(*iter)->start, K, false, (*iter)->prev, extra_block};
-
             free_blocks.erase(*iter);
+            *old_block = {old_block->start, K, false, old_block->prev, extra_block};
             free_blocks.insert(extra_block);
             requests.push_back(old_block);
         }
